@@ -1,0 +1,22 @@
+<h1>Hi {{first_name}}</h1>
+
+<p>{{stuff | safe}}<br>
+
+{% for topping in pizza%}
+    {% if topping == 'Pepperoni' %}
+         {{ topping }} is the best!! <br> 
+
+
+    {% else %}
+         {{ topping }} is just dandy. <br>
+    {% endif %}
+{% endfor %}
+<br>
+<br>
+{{ pizza.0 | reverse }}<br>
+{{ pizza.0 | indent }}<br>
+{{ pizza.0 | center }}<br>
+{{ pizza.0 | wordcount }}<br>
+<br>
+<br>
+Yippity.</p>
